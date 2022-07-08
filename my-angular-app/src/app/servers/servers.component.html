@@ -1,0 +1,9 @@
+<h1>{{ getServerCount() }} Servers</h1>
+<div class="btn btn-primary" (click)="onCreateServer()">Add Server</div>
+<div class="btn btn-primary" (click)="onDeleteServer()">Delete Server</div>
+<ul>
+    <li  *ngFor="let a of getServers(); let index = index">Server {{ index }}
+        <app-server></app-server>
+    </li>
+</ul>
+
